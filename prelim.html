@@ -16,9 +16,9 @@
             </ul>
         </nav>
 
-        <h1 id="header">HTML Headers <a href="#top">(top)</a></h1>
+        <h3 id="header">HTML Headers <a href="#top">(top)</a></h3>
         <table border="1">
-            <thead>
+
             <tr>
                 <th>Description</th>
                 <th>Markup</th>
@@ -26,37 +26,130 @@
             </tr>
             <tr>
                 <td>Heading 1</td>
-                <td>&lt;h1&lt;Heading 1 &lt;h1/></td>
+                <td>&lt;h1>Heading 1 &lt;h1/></td>
                 <td><h1>Heading 1</h1></td>
             </tr>
             <tr>
                 <td>Heading 2</td>
-                <td>&lt;h2&lt;Heading 2 &lt;h2/></td>
+                <td>&lt;h2>Heading 2 &lt;h2/></td>
                 <td><h2>Heading 2</h2></td>
             </tr>
             <tr>
                 <td>Heading 3</td>
-                <td>&lt;h3&lt;Heading 3 &lt;h3/></td>
+                <td>&lt;h3>Heading 3 &lt;h3/></td>
                 <td><h3>Heading 3</h3></td>
             </tr>
             <tr>
                 <td>Heading 4</td>
-                <td>&lt;h4&lt;Heading 4 &lt;h4/></td>
+                <td>&lt;h4>Heading 4 &lt;h4/></td>
                 <td><h4>Heading 4</h4></td>
             </tr>
             <tr>
                 <td>Heading 5</td>
-                <td>&lt;h5&lt;Heading 5 &lt;h5/></td>
+                <td>&lt;h5>Heading 5 &lt;h5/></td>
                 <td><h5>Heading 5</h5></td>
             </tr>
             <tr>
                 <td>Heading 6</td>
-                <td>&lt;h6&lt;Heading 6 &lt;h6/></td>
+                <td>&lt;h6>Heading 6 &lt;h6/></td>
                 <td><h6>Heading 6</h6></td>
-            </tr>
-            </thead>
-        </table>
+            </tr> 
 
+        </table>
+        <h3 id="typography">HTML Typography <a href="#top">(top)</a></h3>
+        <table border="1">
+            <tr>
+                <th>Description</th>
+                <th>Markup</th>
+                <th>Output</th>
+            </tr>
+            <tr>
+                <td>Paragraph</td>
+                <td>&lt;p>This is a paragraph. &lt;/p></td>
+                <td><p>This is a paragraph.</p></td>
+            </tr>
+            <tr>
+                <td>Span</td>
+                <td>&lt;span>This is a Span. &lt;/span></td>
+                <td><span>This is a Span.</span></p></td>
+            </tr>
+            <tr>
+                <td>Link</td>
+                <td>&lt;a href="#">This is a Link. &lt;/a></td>
+                <td><a href="#"> This is a link</a></td>
+            </tr>
+            <tr>
+                <td>Ordered List</td>
+                <td>
+                    <code>
+                    &lt;ol> <br>
+                    <p style="margin-left: 20px">
+                        &lt;li>Step 1 &lt;/li> <br>
+                        &lt;li>Step 2 &lt;/li> <br>
+                        &lt;li>Step 3 &lt;/li> <br>
+                        &lt;/ol>
+
+                    </p>
+                    </code>
+                </td>
+                <td><ol>
+                    <li>Step 1</li>
+                    <li>Step 2</li>
+                    <li>Step 3</li>
+                </ol></td>
+            </tr>
+            <tr>
+                <td>Unordered List</td>
+                <td>
+                    <code>
+                    &lt;ul> <br>
+                    <p style="margin-left: 20px">
+                        &lt;li>Step 1 &lt;/li> <br>
+                        &lt;li>Step 2 &lt;/li> <br>
+                        &lt;li>Step 3 &lt;/li> <br>
+                        &lt;/ul>
+
+                    </p>
+                    </code>
+                </td>
+                <td><ul>
+                    <li>Step 1</li>
+                    <li>Step 2</li>
+                    <li>Step 3</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Horizontal Rule</td>
+                <td>
+                    <p>This content is above the Horizontal Rule <br>
+                        &lt;hr> <br>
+                    This content is below the Horizontal Rule
+                    </p>
+                </td>
+                <td><p>This content is above the Horizontal Rule</p>
+                <hr>
+                <p>This content is below the Horizontal Rule</p></td>
+            </tr>
+            <tr>
+                <td>Break Line</td>
+                <td>This content has a &lt;br> break line</td>
+                <td>This content has a <br> break line</td>
+            </tr>
+            <tr>
+                <td>Preformat Text</td>
+                <td><pre>&lt;pre>
+This content preserves White spaces              and 
+break lines </pre>&lt;/pre></td>
+                <td><pre>This content preserves white spaces          and 
+break lines</pre></td>
+            </tr>
+
+            <tr>
+                <td>Computer Code</td>
+                <td>&lt;code> <br> console.WriteLine("Hello World!"): <br> &lt;/code></td>
+                <td><code>console.WriteLine("Hello World!"):</code></td>
+            </tr>
+        </table>
 
 
 
