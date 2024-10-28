@@ -16,14 +16,13 @@ h1 {
 }
 
 .sidebar {
-    background-color: snow;
+    background-color: cornsilk;
     height: 100%;
     width: 260px;
     position: fixed; 
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: #fff; 
     overflow-x: hidden; 
     padding-top: 20px;
     border: 2px solid #555;
@@ -76,4 +75,14 @@ table {
 td {
     padding-left: 10px;
     
+}
+
+th {
+    background-color: lightslategray;
+    color: azure;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
