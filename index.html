@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="index.css">
     <head>
         <title>Prelims Websystems</title>
     </head>
+    <nav id="mySidenav", class="sidebar">
+        <h1 id="top">PRIN-135: HTML Cheatsheet</h1>
+        <ul>
+            <a href="#headers"><li>HTML Headers</li></a>
+            <a href="#typography"><li>HTML Typography</li></a>  
+            <a href="#formatting"><li>HTML Formatting</li></a>  
+            <a href="#media"><li>HTML Media</li></a>  
+            <a href="#forms"><li>HTML Forms</li></a>
+            <a href="#tables"><li>HTML Table</li></a>      
+        </ul>
+        <p>© PRIN135 Midterm Exam <br><a href="https://turonacue.github.io/"><strong>Turonacue</strong></a></p>
+    </nav>
     <body>
-        <nav id="top">
-            <h1><strong>PRIN-135: HTML Cheatsheet</strong></h1>
-            <ul>
-                <a href="#header"><li>HTML Headers</li></a>
-                <a href="#typography"><li>HTML Typography</li></a>
-                <a href="#formatting"><li>HTML Formatting</li></a>
-                <a href="#media"><li>HTML Media</li></a>
-                <a href="#table"><li>HTML Table</li></a>
-                <a href="#forms"><li>HTML Forms</li></a>
-            </ul>
-        </nav>
-
-        <h3 id="header">HTML Headers <a href="#top">(top)</a></h3>
+        
+        <h1 id="header">HTML Headers</h3>
         <table border="1">
 
             <tr>
@@ -56,7 +58,7 @@
             </tr> 
 
         </table>
-        <h3 id="typography">HTML Typography <a href="#top">(top)</a></h3>
+        <h1 id="typography">HTML Typography</h3>
         <table border="1">
             <tr>
                 <th>Description</th>
@@ -71,7 +73,7 @@
             <tr>
                 <td>Span</td>
                 <td>&lt;span>This is a Span. &lt;/span></td>
-                <td><span>This is a Span.</span></p></td>
+                <td><span>This is a Span.</span></td>
             </tr>
             <tr>
                 <td>Link</td>
@@ -150,7 +152,7 @@ break lines</pre></td>
                 <td><code>console.WriteLine("Hello World!"):</code></td>
             </tr>
         </table>
-        <h3 id="formatting">HTML Formatting <a href="#top">(top)</a></h3>
+        <h1 id="formatting">HTML Formatting</h3>
         <table border="1">
             <tr>
                 <th>Description</th>
@@ -198,7 +200,7 @@ break lines</pre></td>
                 <td>This is a <sup>Supscripted</sup> text</td>
             </tr>
         </table>
-        <h3 id="media">HTML Media <a href="#top">(top)</a></h3>
+        <h1 id="media">HTML Media</h3>
         <table border="1">
             <tr>
                 <th>Description</th>
@@ -236,13 +238,202 @@ break lines</pre></td>
                 <td><iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"> </iframe></td>
             </tr>
         </table>
-        <h3 id="table">HTML Formatting <a href="#top">(top)</a></h3>
+        <h1 id="forms">HTML Formatting</h3>
         <table border="1">
             <tr>
                 <th>Description</th>
                 <th>Markup</th>
                 <th>Output</th>
             </tr>
+            <tr>
+                <td>Label</td>
+                <td>&lt;label for ="input-id"&gt;Label:&lt;/label&gt;</td>
+                <td><p><label>Label:</label></p></td>
+            </tr>
+            <tr>
+                <td>Input - Textbox</td>
+                <td>&lt;input type="text" name="name"&gt;</td>
+                <td><p><input type="text" name="name"></p></td>
+            </tr>
+            <tr>
+                <td>Input - Number</td>
+                <td>&lt;input type="number" name="name"&gt;</td>
+                <td><p><input type="number" name="name"></p></td>
+            </tr>
+            <tr>
+                <td>Input - Password</td>
+                <td>&lt;input type="password" name="name"&gt;</td>
+                <td><p><input type="password" name="name"></p></td>
+            </tr>
+            <tr>
+                <td>Input - Checkbox</td>
+                <td>&lt;input type="checkbox" name="name"&gt; Check me</td>
+                <td><p><input type="checkbox" name="name">Check me</p></td>
+            </tr>
+            <tr>
+                <td>Input - Radio</td>
+                <td>&lt;input type="radio" name="name"&gt; Option 1 <br>
+                    &lt;input type="radio" name="name"&gt; Option 2</td>
+                <td><p><input type="radio" name="name">Option 1</p>
+                    <p><input type="radio" name="name"> Option 2</p></td>
+            </tr>
+            <tr>
+                <td>Input - Submit</td>
+                <td>&lt;input type="submit" value="submit"&gt;</td>
+                <td><p><input type="submit" value="submit"></p></td>
+            </tr>
+            <tr>
+                <td>Input - Button</td>
+                <td>&lt;input type="button" value="Click Me"&gt;</td>
+                <td><p><input type="button" value="Click Me"></p></td>
+            </tr>
+            <tr>
+                <td>Select</td>
+                <td>&lt;select name="name"&gt; <br>
+                    &emsp;&emsp;&lt;option value="option1"&gt;Option 1&lt;/option&gt;<br>
+                    &emsp;&emsp;&lt;option value="option2"&gt;Option 2&lt;/option&gt; <br>
+                    &emsp;&emsp;&lt;option value="option3"&gt;Option 3&lt;/option&gt; <br>
+                    &lt;select&gt;</td>
+                <td><select name="name">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <select></td>
+            </tr>
+            <tr>
+                <td>Textarea</td>
+                <td>&lt;textarea name="name"&gt;Textarea here&lt;/textarea&gt;</td>
+                <td><textarea name="name">Textarea here</textarea>  
+                </td>
+            </tr>
+        </table>
+        <h1 id="tables">HTML Tables</h3>
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Markup</th>
+                <th>Example</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p>Table</p></td>
+                <td><code>&lt;table&gt;&lt;/table&gt;</code></td>
+                <td rowspan="3">
+                  <code>
+                    <pre>
+      &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+            &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+        &lt;/tr&gt;  
+        &lt;tr&gt;
+            &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+            &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+        &lt;/tr&gt;  
+      &lt;/table&gt;
+                  </pre
+                    >
+                  </code>
+                </td>
+                <td rowspan="3">
+                  <table border="1">
+                    <tr>
+                      <td>Row 1 Column 1</td>
+                      <td>Row 2 Column 2</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1 Column 1</td>
+                      <td>Row 2 Column 2</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Table Row</p></td>
+                <td><code>&lt;tr&gt;&lt;/tr&gt;</code></td>
+              </tr>
+              <tr>
+                <td><p>Table Data</p></td>
+                <td><code>&lt;td&gt;&lt;/td&gt;</code></td>
+              </tr>
+              <tr>
+                <td><p>Table Head</p></td>
+                <td><code>&lt;thead&gt;&lt;/thead&gt;</code></td>
+                <td rowspan="4">
+                  <code>
+                    <pre>
+      &lt;table border="1"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Column 1&lt;/th&gt;
+                &lt;th&gt;Column 2&lt;/th&gt;
+            &lt;/tr&gt;          
+        &lt;/thead&gt;  
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+                &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+            &lt;/tr&gt;  
+            &lt;tr&gt;
+                &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+                &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;        
+            &lt;tr&gt;
+                &lt;td&gt;Column 1 Footer&lt;/td&gt;
+                &lt;td&gt;Column 2 Footer&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+      &lt;/table&gt;
+                    </pre>
+                  </code>
+                </td>
+      <td rowspan="4">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Row 1 Column 1</td>
+                        <td>Row 2 Column 2</td>
+                      </tr>
+                      <tr>
+                        <td>Row 1 Column 1</td>
+                        <td>Row 2 Column 2</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Column 1 Footer</td>
+                        <td>Column 2 Footer</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Table Head Cell</p></td>
+                <td><code>&lt;th&gt;&lt;/th&gt;</code></td>
+              </tr>
+              <tr>
+                <td><p>Table Body</p></td>
+                <td><code>&lt;tbody&gt;&lt;/tbody&gt;</code></td>
+              </tr>
+              <tr>
+                <td><p>Table Footer</p></td>
+                <td><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code></td>
+              </tr>
+            </tbody>
+          </table>
+    
 
 
 
