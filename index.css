@@ -44,14 +44,12 @@ h1 {
 
 .sidebar ul {
     list-style: none;
-    
 }
   
 .sidebar li {
     border-top: 1px solid #555;
     border-bottom: 1px solid #555;
     padding: 20px 20px 20px 20px;
-    
 }
 
 .sidebar a {
@@ -74,7 +72,6 @@ table {
 
 td {
     padding-left: 10px;
-    
 }
 
 th {
@@ -86,3 +83,57 @@ th {
     font-weight: <weight>;
     font-style: normal;
 }
+
+@media (min-width: 425px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    HTML {
+    scroll-behavior: smooth;
+    margin-left: 0;
+    overflow-x: auto;
+}
+HTML table{
+    overflow-x: auto;
+}
+}
+
+@media (max-width: 425px) {
+   
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        max-height: 150px;
+    }
+
+    HTML {
+        margin-left: 0;
+    }
+
+    body {
+        padding-left: 0px;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    HTML {
+        overflow-x: scroll;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    th, td {
+        white-space: nowrap;
+    }
+}   
